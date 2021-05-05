@@ -11,4 +11,14 @@
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
 
+    <fragment
+        android:id="@+id/bootFragment"
+        android:name="com.anilyilmaz.navigationcomponentsample.BootFragment"
+        android:label="fragment_boot"
+        tools:layout="@layout/fragment_boot" >
+        <action
+            android:id="@+id/action_boot_to_home"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
 </navigation>
