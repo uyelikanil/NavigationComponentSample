@@ -22,8 +22,11 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val button = view.findViewById<Button>(R.id.navigate_boot_button)
-        button?.setOnClickListener { findNavController().navigate(R.id.bootFragment) }
+        val buttonBoot = view.findViewById<Button>(R.id.navigate_boot_button)
+        val buttonSettings = view.findViewById<Button>(R.id.navigate_settings_button)
+
+        buttonBoot?.setOnClickListener { findNavController().navigate(R.id.bootFragment) }
+        buttonSettings?.setOnClickListener { findNavController().navigate(R.id.settingsFragment) }
     }
 
     override fun onStart() {
