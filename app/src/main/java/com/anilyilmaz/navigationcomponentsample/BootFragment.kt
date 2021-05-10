@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 
 class BootFragment : Fragment() {
@@ -26,5 +27,15 @@ class BootFragment : Fragment() {
 
         buttonHome?.setOnClickListener { findNavController().navigate(R.id.action_boot_to_home) }
         buttonSettings?.setOnClickListener { findNavController().navigate(R.id.action_boot_to_settings) }
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Toast.makeText(context,"Boot Fragment on stop", Toast.LENGTH_SHORT).show()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Toast.makeText(context,"Boot Fragment on destroy", Toast.LENGTH_SHORT).show()
     }
 }
