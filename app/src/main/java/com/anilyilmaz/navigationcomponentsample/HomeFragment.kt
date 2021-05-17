@@ -23,9 +23,11 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val buttonBoot = view.findViewById<Button>(R.id.navigate_boot_button)
+        val buttonDetail = view.findViewById<Button>(R.id.navigate_detail_button)
         val buttonSettings = view.findViewById<Button>(R.id.navigate_settings_button)
 
         buttonBoot?.setOnClickListener { findNavController().navigate(R.id.bootFragment) }
+        buttonDetail?.setOnClickListener { findNavController().navigate(R.id.detailFragment) }
         buttonSettings?.setOnClickListener { findNavController().navigate(R.id.settingsGraph) }
     }
 

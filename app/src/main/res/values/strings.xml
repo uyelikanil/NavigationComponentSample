@@ -4,8 +4,10 @@
     <string name="boot_fragment">Boot Fragment</string>
     <string name="settings_fragment">Settings Fragment</string>
     <string name="about_fragment">About Fragment</string>
+    <string name="detail_fragment">Detail Fragment</string>
     <string name="navigate_to_settings">NAVIGATE TO SETTINGS</string>
     <string name="navigate_to_boot">NAVIGATE TO BOOT</string>
     <string name="navigate_to_home">NAVIGATE TO HOME</string>
     <string name="navigate_to_about">NAVIGATE TO ABOUT</string>
+    <string name="navigate_to_detail">NAVIGATE TO DETAIL</string>
 </resources>

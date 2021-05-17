@@ -18,12 +18,25 @@
         tools:layout="@layout/fragment_boot" >
         <action
             android:id="@+id/action_boot_to_home"
-            app:popUpTo="@id/homeFragment"
-            />
+            app:popUpTo="@id/homeFragment" />
+        <action
+            android:id="@+id/action_boot_to_detail"
+            app:destination="@id/detailFragment" />
         <action
             android:id="@+id/action_boot_to_settings"
-            app:destination="@id/settingsGraph"
-            />
+            app:destination="@id/settingsGraph" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.anilyilmaz.navigationcomponentsample.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <action
+            android:id="@+id/action_detail_to_home"
+            app:popUpTo="@id/homeFragment" />
+        <action
+            android:id="@+id/action_detail_to_boot"
+            app:popUpTo="@id/bootFragment" />
     </fragment>
 
     <navigation android:id="@+id/settingsGraph"
@@ -35,8 +48,7 @@
             tools:layout="@layout/fragment_settings">
             <action
                 android:id="@+id/action_settings_to_about"
-                app:destination="@id/aboutFragment"
-                />
+                app:destination="@id/aboutFragment" />
         </fragment>
         <fragment
             android:id="@+id/aboutFragment"
@@ -45,8 +57,7 @@
             tools:layout="@layout/fragment_about">
             <action
                 android:id="@+id/action_about_to_settings"
-                app:popUpTo="@id/settingsFragment"
-                />
+                app:popUpTo="@id/settingsFragment" />
         </fragment>
     </navigation>
 

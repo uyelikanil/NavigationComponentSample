@@ -27,6 +27,16 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
+        android:id="@+id/boot_navigate_detail_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/navigate_to_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boot_navigate_home_button" />
+
+    <Button
         android:id="@+id/boot_navigate_settings_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -34,6 +44,6 @@
         android:text="@string/navigate_to_settings"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/boot_navigate_home_button" />
+        app:layout_constraintTop_toBottomOf="@+id/boot_navigate_detail_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
